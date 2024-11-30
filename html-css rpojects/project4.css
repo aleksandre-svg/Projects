@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo img {
+    width: 120px;
+}
+
+.nav .profile img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+.banner {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+.movie-row {
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.movie-row h2 {
+    font-size: 28.8px;
+    margin-bottom: 20px;
+}
+
+.movie-row-items {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+}
+
+.movie-item img {
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+    color: #aaa;
+}

@@ -1,0 +1,9 @@
+#button1 {
+    margin-left:1600px;
+}
+#button2 {
+    transition: 0.4s;
+}
+#button2:hover {
+    margin-left: 1600px;
+}
