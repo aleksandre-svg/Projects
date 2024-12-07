@@ -132,3 +132,88 @@ body {
     border-radius: 3px;
     opacity: 5;
 }
+
+#div2 {
+    width: 1920px;
+    height: 800px;
+    background-color: #0B0E16;
+    position: relative;
+    top: 924px;
+    right: 10px;
+}
+
+#p6 {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    top: 190px;
+    left: 200px;
+}
+
+#h3 {
+    color: white;
+    position: relative;
+    top: 180px;
+    font-size: 25px;
+    left: 200px;
+}
+
+#p7 {
+    color: white;
+    position: relative;
+    top: 170px;
+    left: 200px;
+}
+
+#h4 {
+    color: gray;
+    position: relative;
+    top: 120px;
+    left: 200px;
+}
+
+#img2 {
+    position:relative;
+    left: 200px;
+    bottom: 100px;
+}
+
+#h5 {
+    color: white;
+    position: relative;
+    bottom: 680px;
+    font-size: 19px;
+    left: 1300px;
+}
+
+#img3 {
+    position: relative;
+    bottom: 800px;
+    left: 1282px;
+}
+
+#p8 {
+    position: relative;
+    bottom: 765px;
+    left: 1300px;
+    color: gray;
+}
+
+#p9 {
+    color: gray;
+    position: relative;
+    bottom: 755px;
+    left: 1300px;
+}
+
+#img4 {
+    position: relative;
+    bottom: 730px;
+    left: 1300px;
+}
+
+#img5 {
+    position: relative;
+    bottom: 730px;
+    left: 1330px;
+}
