@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="answer">
+            <p id="ans">0</p>
+        </div>
+        <div id="first">
+            <div id="first1" onmousedown="cleared()" class="butt">AC</div>
+            <div id="first2" onmousedown="opp()" class="butt">+/-</div>
+            <div id="first3" onmousedown="prec()" class="butt">%</div>
+            <div id="first4" onmousedown="divide()" class="butt">/</div>
+        </div>
+        <div id="second">
+            <div id="second1" onmousedown="seven()" class="butt">7</div>
+            <div id="second2" onmousedown="eight()" class="butt">8</div>
+            <div id="second3" onmousedown="nine()" class="butt">9</div>
+            <div id="second4" onmousedown="mult()" class="butt">X</div>
+        </div>
+        <div id="third">
+            <div id="third1" onmousedown="four()" class="butt">4</div>
+            <div id="third2" onmousedown="five()" class="butt">5</div>
+            <div id="third3" onmousedown="six()" class="butt">6</div>
+            <div id="third4" onmousedown="minus()" class="butt">-</div>
+        </div>
+        <div id="forth">
+            <div id="forth1" onmousedown="one()" class="butt">1</div>
+            <div id="forth2" onmousedown="two()" class="butt">2</div>
+            <div id="forth3" onmousedown="three()" class="butt">3</div>
+            <div id="forth4"  onmousedown="plus()" class="butt">+</div>
+        </div>
+        <div id="fifth">
+            <div id="fifth1" onmousedown="squ()" class="butt">^</div>
+            <div id="fifth2" onmousedown="zero()" class="butt">0</div>
+            <div id="fifth3" onmousedown="point()" class="butt">.</div>
+            <div id="fifth4" onmousedown="calculateExpression()" class="butt">=</div>
+        </div>
+    </div><br>
+    <script src="script.js"></script>
+</body>
+</html>

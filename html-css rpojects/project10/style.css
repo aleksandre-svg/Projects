@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    flex-wrap: wrap;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    color: red;
+}
+
+#player1 img, #player2 img {
+    width: 150px;
+}

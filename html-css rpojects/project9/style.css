@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#answer p {
+    font-size: 60px;
+    font-family: sans-serif;
+    text-align: right;
+    word-wrap: normal;
+}
+
+
+#calculator {
+    width: 320px;
+    height: 670px;
+    background-color: black;
+    border-radius: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 5px;
+}
+
+#first, #second, #third, #forth, #fifth {
+    display: flex;
+    font-size: 30px;
+    font-family: sans-serif;
+    justify-content: space-between;
+}
+
+#first1, #first2, #first3 {
+    background-color: #5c5c5f;
+}
+
+#first div, #second div, #third div, #forth div, #fifth div {
+    cursor: pointer;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second1, #second2, #second3, #third1, #third2, #third3, #forth1, #forth2, #forth3, #fifth1, #fifth2, #fifth3{
+    background-color: #2a2a2c;
+}
+
+#first4, #second4, #third4, #forth4, #fifth4 {
+    background-color: #ff9f0a;
+}
+
+@media (max-height: 689px) {
+    #calculator {
+        height: 100%;
+    }
+}
+
+@media (max-width: 316px){
+    #calculator {
+        width: 100%;
+    }
+}
+
+.butt:hover {  
+    background-color:chocolate;
+}
