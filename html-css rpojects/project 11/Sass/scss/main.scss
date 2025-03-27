@@ -1,0 +1,408 @@
+@import "./resets", "./variables";
+
+@function weigth($weigth-name){
+    @return map-get($font-weigths , $weigth-name)
+}
+
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin justify($align,  $gap, $wrap, $content){
+    display: flex;
+    justify-content: $align;
+    align-items: $content;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+@mixin resetUl($gap){
+    display: flex;
+    gap: $gap;
+    list-style-type: none;
+}
+
+@mixin imageResp($percent){
+    width: $percent;
+}
+
+body {
+    background-color: $bg-color;
+    font-weight: map-get($font-weigths, bold);
+    color: $text-color;
+    font-family: $primary-font-family
+}
+
+#nav1 {
+    @include justify(space-around, 0px, wrap, center)
+}
+
+#nav1-ul {
+    @include resetUl(20px);
+}
+
+#nav1-ul li {
+    font-size: map-get($font-size, regular);
+    @include flexCenter(row);
+    cursor: pointer;
+    font-family: $primary-font-family;
+    transition: 0.5s;
+    &:hover {
+        color: $text-color-hover;
+        border-color: $text-color-hover;
+    }
+}
+
+#menu {
+    display: none;
+    cursor: pointer;
+}
+
+#hero-video {
+    @include flexCenter(row);
+    border-radius: 30px;
+    margin-top: 100px;
+}
+
+#hero-video video {
+    border-radius: 20px;
+}
+
+
+#login {
+    border: 1px solid black;
+    padding: 17px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.5);
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.container1 {
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+    width: 1700px;
+    transition: justify-content 0.5s ease-in-out;
+    height: 400px;
+}
+
+
+#div-main1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    border-radius: 20px;
+    display: flex;
+    font-family: $primary-font-family;
+    padding: 6px;
+    justify-content:space-between;
+    flex-direction: column;
+    width: 220px;
+    height: 300px;
+    background-color: chartreuse;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card1:hover {
+    transform: scale(1.2);
+    overflow: visible;
+}
+
+#main-h1 {
+    align-self: start;
+    margin-left: 10%;
+    font-size: 70px;
+    font-family: $primary-font-family;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card1 h1 {
+    margin-top: 15%;
+    font-size: 20px;
+    color: #fff;
+    font-weight: map-get($font-weigths, bold);
+    margin-left: 10px;
+}
+
+
+#arrow11, #arrow22, #arrow1, #arrow2{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#arrow1 {
+    width: 560px;
+}
+#div-main2 h1 {
+    font-family: $primary-font-family;
+    color: #000000b4;
+    font-weight: map-get($font-weigths, thiny);
+    align-self: start;
+}
+
+#div-main2 {
+    font-family: $primary-font-family;
+    color: #000000b4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-weight: map-get($font-weigths, thiny);
+}
+
+#div-card1 {
+    background-color: map-get($card-colo,  first-card);
+}
+
+#div-card2 {
+    background-color: map-get($card-colo,  second-card);
+}
+
+#div-card3 {
+    background-color: map-get($card-colo,  third-card);
+}
+
+#div-card4 {
+    background-color: map-get($card-colo,  fourth-card);
+}
+
+#div-card5 {
+    background-color: map-get($card-colo,  fifth-card);
+}
+
+#div-card6 {
+    background-color: map-get($card-colo,  sixth-card);
+}
+
+#div-card7 {
+    background-color: map-get($card-colo,  seventh-card);
+}
+
+#div-card8 {
+    background-color: map-get($card-colo,  eigth-card);
+}
+
+#div-card9 {
+    background-color: map-get($card-colo,  nineth-card);
+}
+
+#div-card10 {
+    background-color: map-get($card-colo,  tenth-card);
+}
+
+#div-card11 {
+    background-color: map-get($card-colo,  eleventh-card);
+}
+
+#div-card12 {
+    background-color: map-get($card-colo,  tvelth-card);
+}
+
+
+#div-main2-div1 {
+    @include justify(space-around, center, wrap, 60px);
+    margin-top: 150px;
+}
+
+#div-main2 h1 {
+    margin-left: 7%;
+}
+
+#div-main2-div1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+#div-main2-div1 div p {
+    line-height: 25px;
+}
+
+#footer-div1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 30px;
+}
+
+#footer1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+#footer-div1-div1 {
+    display: flex;
+    gap: 30px;
+}
+
+#footer-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-right: 30px;
+}
+
+#footer-div2 * {
+    cursor: pointer;
+}
+#button-joinnow {
+    background-color: #222325;
+    align-self: center;
+    color: #fff;
+    font-family: $primary-font-family;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+#div-main3 {
+    background-color: #4d1727;
+    color: #fff;
+    font-weight: map-get($font-weigths, thiny);
+    @include flexCenter(column);
+    flex-wrap: wrap;
+    justify-self: center;
+    width: 1300px;
+    height: 250px;
+    border-radius: 15px;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+#div-main3 h1 {
+    font-size: 60px;
+}
+
+#div-main3 h1 span{
+    color: #ff7640;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#div-main3 button {
+    color: #4d1727;
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: map-get($font-weigths, bold);
+}
+
+
+#resp-menu * {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#resp-menu li:hover{
+    color: #ff7640;
+}
+
+@media (max-width: 823px){
+    #nav1-ul{
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+}
+
+@media (max-width: 1343px){
+    #hero-video video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1823px){
+    .container1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container #arrow1, .container #arrow2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1824px){
+    .container1 {
+        overflow: visible;
+        height: 100%;
+    }
+}
+
+@media (max-width: 375px){
+    #div-main2-div1 {
+        gap: 45px;
+    }
+}
+
+@media (max-width: 1296px){
+    #div-main3 {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #div-main3 h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 365px){
+    #footer1 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #footer1 * {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

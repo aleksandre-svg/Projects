@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#welcome {
+    font-size: 40px;
+    color: rgb(89, 120, 130);
+}
+
+#header {
+    margin: 50px;
+}
+
+#datep {
+    color: rgba(128, 128, 128, 0.47);
+    font-size: 20px;
+}
+
+#banner {
+    width: 100%;
+    height: 200px;
+}
+
+#Profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#username1 {
+    font-size: 50px;
+}
+
+#email1 {
+    font-size: 30px;
+}
+
+#info1, #info2, #info3, #info4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#info1-fullname-content, #info2-email-content, #info3-phone-content, #info4-password-content {
+    background-color: rgba(128, 128, 128, 0.444);
+    width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+#info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+#info-main1, #info-main2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#emailaddres1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#emailaddres {
+    margin: 50px;
+}
+
+@media (max-width: 801px){
+    #info1-fullname-content, #info2-email-content, #info3-phone-content, #info4-password-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 678px){
+    #Profile {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        bottom: 140px;
+    }
+}
+
+@media (max-width: 382px){
+    #username1{
+        font-size: 40px;
+    }
+    #email1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90vh;
+        }
+        .form-container {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 50%;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #4c95af;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Portfolio</h1>
+    
+    <div id="formContainer" class="form-container">
+        <h2>Create Your Card</h2>
+        <form id="profileForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="job">Your Job:</label>
+                <input type="text" id="job" required>
+            </div>
+            <div class="form-group">
+                <label for="about">About You:</label>
+                <textarea id="about" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="specs">Your specs:</label>
+                <textarea id="specs" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exp">Expirience with:</label>
+                <textarea id="exp" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="img">Your projects(img-src):</label>
+                <textarea id="img" required></textarea>
+            </div>
+            <button type="submit">Create Card</button>
+        </form>
+    </div>
+    
+    <div id="cardContainer"></div>
+    <img src="">
+    <script>
+        document.getElementById('profileForm').addEventListener('submit', function(e) {
+            e.preventDefault()
+            
+            const name = document.getElementById('name').value
+            const job = document.getElementById('job').value
+            const about = document.getElementById('about').value
+            const img = document.getElementById('img').value
+            const specs = document.getElementById('specs').value
+            const exp = document.getElementById('exp').value
+            document.getElementById('formContainer').classList.add('hidden')
+            
+            const cardHTML = `
+                <div class="card">
+                    <h2>${name}</h2>
+                    <p><strong>Job:</strong> ${job}</p>
+                    <p><strong>About:</strong> ${about}</p>
+                    <p><strong>Specs:</strong> ${specs}</p>
+                    <p><strong>Expirience:</strong> ${exp}</p>
+                    <p><strong>Projects:</strong> <img src="${img}"></p>
+                </div>
+            `
+            
+            document.getElementById('cardContainer').innerHTML = cardHTML
+        })
+    </script>
+</body>
+</html>
