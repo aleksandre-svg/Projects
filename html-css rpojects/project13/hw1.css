@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg1.jpg);
+    background-position: top;
+    background-size: cover;
+    font-family: Bungee Tint;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644); /* darkness level */
+    z-index: -1;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+#won {
+    font-size: 50px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    text-align: center;
+}
+
+#dice1, #dice2 {
+    width: 300px;
+    height: 300px;
+    background-color: #c30001;
+    border-radius: 50px;
+}
+
+#dice1-ball1, #dice1-ball2, #dice1-ball3, #dice1-ball4, #dice1-ball5, #dice1-ball6, #dice2-ball1, #dice2-ball2, #dice2-ball3, #dice2-ball4, #dice2-ball5, #dice2-ball6 {
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+#dice1, #dice2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dice1-first, #dice1-second, #dice1-third, #dice2-first, #dice2-second, #dice2-third {
+    display: flex;
+}
+
+#start {
+    padding: 10px 25px;
+    background-color: #c30001;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    display: flex;
+    justify-self: center;
+}
+
+#start:hover {
+    scale: 1.2;
+    background-color: rgb(126, 4, 4);
+}
